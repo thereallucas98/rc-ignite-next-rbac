@@ -1,6 +1,6 @@
 import { defineAbilityFor } from '@acl/auth'
 
-const ability = defineAbilityFor({ role: 'MEMBER' })
+const ability = defineAbilityFor({ role: 'ADMIN', id: 'aadd' })
 
 const userCanInviteSomeoneElese = ability.can('get', 'User')
 const userCanDeleteOtherUsers = ability.can('delete', 'User')

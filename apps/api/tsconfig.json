@@ -1,0 +1,6 @@
+{
+  "extends": "@acl/tsconfig/node.json",
+  "include": [
+    "src/**/*"
+  ]
+}

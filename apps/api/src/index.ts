@@ -1,12 +1,9 @@
-import { defineAbilityFor } from '@acl/auth'
+import { defineAbilityFor, projectSchema } from '@acl/auth'
 
-const ability = defineAbilityFor({ role: 'ADMIN', id: 'aadd' })
+const ability = defineAbilityFor({ role: 'MEMBER', id: 'user-id' })
 
-const userCanInviteSomeoneElese = ability.can('get', 'User')
-const userCanDeleteOtherUsers = ability.can('delete', 'User')
+const project = projectSchema.parse({ id: 'project-id', ownerId: 'user-id' })
 
-const userCannotDeleteOtherUsers = ability.cannot('delete', 'User')
-
-console.log(userCanInviteSomeoneElese)
-console.log(userCanDeleteOtherUsers)
-console.log(userCannotDeleteOtherUsers)
+console.log(ability.can('get', 'Billing'))
+console.log(ability.can('create', 'Invite'))
+console.log(ability.can('delete', project))

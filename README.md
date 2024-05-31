@@ -29,6 +29,7 @@ This project contains all the necessary boilerplate to setup a multi-tenant SaaS
 
 - [X] It should be able to get organization members;
 - [X] It should be able to update a member role;
+- [X] It should be able to delete a member;
 
 ### Projects
 

@@ -15,9 +15,9 @@ This project contains all the necessary boilerplate to setup a multi-tenant SaaS
 
 - [X] It should be able to create a new organization;
 - [X] It should be able to get organizations to which the user belongs;
-- [ ] It should be able to update an organization;
-- [ ] It should be able to shutdown an organization;
-- [ ] It should be able to transfer organization ownership;
+- [X] It should be able to update an organization;
+- [X] It should be able to shutdown an organization;
+- [X] It should be able to transfer organization ownership;
 
 ### Invites
 
@@ -33,9 +33,9 @@ This project contains all the necessary boilerplate to setup a multi-tenant SaaS
 ### Projects
 
 - [ ] It should be able to get projects within a organization;
-- [ ] It should be able to create a new project (name, url, description);
+- [X] It should be able to create a new project (name, url, description);
 - [ ] It should be able to update a project (name, url, description);
-- [ ] It should be able to delete a project;
+- [X] It should be able to delete a project;
 
 ### Billing
 

@@ -34,7 +34,7 @@ This project contains all the necessary boilerplate to setup a multi-tenant SaaS
 
 - [X] It should be able to get projects within a organization;
 - [X] It should be able to create a new project (name, url, description);
-- [ ] It should be able to update a project (name, url, description);
+- [X] It should be able to update a project (name, url, description);
 - [X] It should be able to delete a project;
 
 ### Billing

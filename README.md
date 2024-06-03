@@ -23,7 +23,7 @@ This project contains all the necessary boilerplate to setup a multi-tenant SaaS
 
 - [X] It should be able to invite a new member (e-mail, role);
 - [X] It should be able to accept an invite;
-- [ ] It should be able to revoke a pending invite;
+- [X] It should be able to revoke a pending invite;
 
 ### Members
 

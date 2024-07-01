@@ -1,9 +1,9 @@
 'use server'
 
+import { HTTPError } from 'ky'
 import { z } from 'zod'
 
 import { signInWithPassword } from '@/http/sign-in-with-password'
-import { HTTPError } from 'ky'
 
 const signInSchema = z.object({
   email: z

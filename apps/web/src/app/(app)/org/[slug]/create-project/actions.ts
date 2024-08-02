@@ -24,9 +24,11 @@ export async function createProjectAction(data: FormData) {
 
   const { name, description } = result.data
 
+  const orgValue = await getCurrentOrg()
+
   try {
     await createProject({
-      org: getCurrentOrg()!,
+      org: orgValue!,
       name,
       description,
     })

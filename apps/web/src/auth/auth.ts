@@ -1,3 +1,5 @@
+'use server'
+
 import { defineAbilityFor } from '@acl/auth'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
@@ -5,16 +7,16 @@ import { redirect } from 'next/navigation'
 import { getProfile } from '@/http/get-profile'
 import { getMembership } from '@/http/organizations/get-membership'
 
-export function isAuthenticated() {
+export async function isAuthenticated() {
   return !!cookies().get('token')?.value
 }
 
-export function getCurrentOrg() {
+export async function getCurrentOrg() {
   return cookies().get('org')?.value ?? null
 }
 
 export async function getCurrentMembership() {
-  const org = getCurrentOrg()
+  const org = await getCurrentOrg()
 
   if (!org) {
     return null

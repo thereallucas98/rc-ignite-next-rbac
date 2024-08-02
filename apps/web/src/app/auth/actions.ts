@@ -1,3 +1,5 @@
+'use server'
+
 import { env } from '@acl/env'
 import { redirect } from 'next/navigation'
 

@@ -79,6 +79,7 @@ app.register(fastifyJwt, {
 
 app.register(fastifyCors)
 
+// ACCOUNT
 app.register(createAccount)
 app.register(authenticateWithPassword)
 app.register(authenticateWithGithub)
@@ -86,6 +87,7 @@ app.register(getProfile)
 app.register(requestPasswordRecover)
 app.register(resetPassword)
 
+// ORGANIZATION
 app.register(createOrganization)
 app.register(getMembership)
 app.register(getOrganization)
@@ -94,16 +96,19 @@ app.register(updateOrganization)
 app.register(shutdownOrganization)
 app.register(transferOrganization)
 
+// PROJECTS
 app.register(createProject)
 app.register(deleteProject)
 app.register(getProject)
 app.register(getProjects)
 app.register(updateProject)
 
+// MEMBERS
 app.register(getMembers)
 app.register(updateMember)
 app.register(removeMember)
 
+// INVITES
 app.register(createInvite)
 app.register(getInvite)
 app.register(getInvites)
@@ -112,6 +117,7 @@ app.register(rejectInvite)
 app.register(revokeInvite)
 app.register(getPendingInvites)
 
+// BILLING
 app.register(getOrganizationBilling)
 
 app.listen({ port: env.SERVER_PORT }).then(() => {

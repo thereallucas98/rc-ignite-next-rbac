@@ -38,9 +38,7 @@ export async function revokeInvite(app: FastifyInstance) {
         const { cannot } = getUserPermissions(userId, membership.role)
 
         if (cannot('delete', 'Invite')) {
-          throw new UnauthorizedError(
-            `You are not allowed to delete an invite.`,
-          )
+          throw new UnauthorizedError(`You're not allowed to delete an invite.`)
         }
 
         const invite = await prisma.invite.findUnique({

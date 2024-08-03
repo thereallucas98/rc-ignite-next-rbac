@@ -11,6 +11,8 @@ export async function Invites() {
 
   const { invites } = await getInvites(currentOrg!)
 
+  console.log('invites', invites)
+
   return (
     <div className="space-y-4">
       {permissions?.can('create', 'Invite') && (
